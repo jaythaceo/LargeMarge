@@ -24,7 +24,7 @@ void bubbleSort(int *a, int size) {
 int main()
 {
     int k;
-    int a[] = {5,7,1,3,4,9,2,6,8,0};
+    int a[] = {5,7,1,4,4,9,2,6,8,0};
     const size_t sz = sizeof(a)/sizeof(a[0]);
     for (k = 0; k < sz; k++)
         cout << *(a+k) << " ";
