@@ -194,6 +194,6 @@ int main(int argc, const char *argv[])
     cout << "Deleting the copied list\n";
     deleteLinkedList(&newHead);
     display(newHead);
-
+    
     return 0;
 }
