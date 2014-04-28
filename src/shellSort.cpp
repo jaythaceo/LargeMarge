@@ -1,5 +1,4 @@
 
-
 #include <iostream>
 #include <iomanip>
 
@@ -53,7 +52,6 @@ int main(int argc, const char *argv[])
 
     cout << "Sorted array" << endl;
     print(a, sz, sz);
-
 
     return 0;
 }

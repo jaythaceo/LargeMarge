@@ -1,5 +1,4 @@
 
-
 #include <iostream>
 
 using namespace std;
@@ -31,8 +30,6 @@ int main()
     cout << endl;
     cout << "=================" << endl;
     bubbleSort(a, sz);
-
-
 
     return 0;
 }

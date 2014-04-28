@@ -39,6 +39,3 @@ void displayBits( unsigned value )
 
     cout << endl;
 }
-
-
-
