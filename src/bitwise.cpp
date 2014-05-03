@@ -22,6 +22,7 @@ int main(int argc, const char *argv[])
     return 0;
 }
 
+// Function
 void displayBits( unsigned value )
 {
     const int SHIFT = 8 * sizeof( unsigned ) - 1;
