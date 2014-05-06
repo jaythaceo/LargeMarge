@@ -1,4 +1,4 @@
-// Roll one six sided die 6000 times
+// Roll one six sided die 60000 times
 
 #include <iostream>
 #include <iomanip>
@@ -13,7 +13,7 @@ int main(int argc, const char *argv[])
 
     srand(time(0));
 
-    for(int roll = 1; roll <= 6000; roll++)
+    for(int roll = 1; roll <= 60000; roll++)
         ++frequency[ 1 + rand() % 6];
 
     cout << "Face" << setw(13) << "Frequency" << endl;
