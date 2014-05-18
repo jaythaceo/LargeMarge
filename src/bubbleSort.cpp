@@ -17,7 +17,6 @@ void bubbleSort(int *a, int size) {
             cout << *(a+k) << " ";
         cout << endl;
 
-        int dummy = 1;
     }
 }
 int main()
