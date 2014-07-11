@@ -42,7 +42,7 @@ struct Node *searchNode(struct Node *head, int n) {
         cur = cur->next;
     }
     cout << "No Node " << n << " in list.\n";
-}
+};
 
 bool deleteNode(struct Node **head, Node *ptrDel) {
     Node *cur = *head;
@@ -194,6 +194,6 @@ int main(int argc, const char *argv[])
     cout << "Deleting the copied list\n";
     deleteLinkedList(&newHead);
     display(newHead);
-    
+
     return 0;
 }
