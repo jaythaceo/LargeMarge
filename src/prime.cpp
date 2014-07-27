@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, const char *argv[])
 {
+    // Start here
     std::vector<int> primes;
     primes.push_back(2);
     for (int i = 2; i < 1000; i++) {
