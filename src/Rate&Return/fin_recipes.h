@@ -24,12 +24,12 @@ double cash_flow_pv_discrete(const vector<double>& cflow_times,
 double cash_flow_irr_discrete(const vector<double> cflow_times,
                               const vector<double> cflow_amounts);
 
-BOOL cash_flow_unique_irr(const vector<double> cflow_times,
+bool cash_flow_unique_irr(const vector<double> cflow_times,
                           const vector<double> cflow_amounts);
 
 double bonds_price_discrete(const vector<double>& cashflow_times,
                             const vector<double>& cashflows,
-                            const double& r):
+                            const double& r);
 
 double bonds_yield_to_maturity_discrete(const vector<double>& times,
                                         const vector<double>& amounts,
@@ -37,7 +37,7 @@ double bonds_yield_to_maturity_discrete(const vector<double>& times,
 
 double bonds_duration_discrete(const vector<double>& times,
                                const vector<double>& cashflows,
-                               const double& r):
+                               const double& r);
 
 double bonds_duration_macaulay_discrete(const vector<double>& cashflow_times,
                                         const vector<double>& cashflows,
@@ -65,7 +65,7 @@ double bonds_price(const vector<double>& cashflow_times,
 
 double bonds_price(const vector<double>& coupon_times,
                    const vector<double>& coupon_amounts,
-                   const vector<double>& principal_times
+                   const vector<double>& principal_times,
                    const vector<double>& principal_amounts,
                    const double& r);
 
@@ -113,7 +113,7 @@ public:
     virtual double f(const double& t1, const double& t2) const;
 };
 
-class tern_structure_class_flat : public: term_structure_class {
+class term_structure_class_flat : public term_structure_class {
 private:
     double R_; // interest rate
 public:
@@ -140,7 +140,6 @@ public:
     virtual double r(const double& T) const;
     void set_interpolated_observations(vector<double>& times, vector<double>& yields);
 };
-
 
 // using term structure class
 

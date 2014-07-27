@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 
 int main(int argc, const char *argv[])
@@ -21,6 +22,8 @@ int main(int argc, const char *argv[])
 
         cout << endl;
     }
+
+    cout << "Histogram!!" << endl;
 
     return 0;
 }
