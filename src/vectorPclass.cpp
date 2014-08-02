@@ -14,6 +14,7 @@ class Vector
         Point start, end;
 };
 
+
 int main()
 {
     Vector vec1;

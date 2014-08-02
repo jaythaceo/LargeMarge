@@ -1,4 +1,6 @@
- 
+/*
+ * Classes.cc
+ */
 
 #include <iostream>
 
@@ -23,7 +25,7 @@ Increment::Increment(int c, int i)
 
 void Increment::print() const {
 
-  cout << "count = " << count << ", increment = " 
+  cout << "count = " << count << ", increment = "
   << increment << endl;
 }
 
@@ -40,7 +42,7 @@ int main(int argc, char const *argv[])
     cout << "After increment: " << j + 1 << " : ";
     value.print();
   }
-  
-  
+
+
   return 0;
 }
