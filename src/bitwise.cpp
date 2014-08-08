@@ -1,5 +1,5 @@
 /*
- * Printing an unsigned interger
+ * Printing an unsigned integer
  * in bits.
  *
  */
