@@ -39,6 +39,22 @@ public:
     return accountNumber;
   }
 
+  // Setters
+  void setAcctHolder(const string& name) {
+    accountHolder = name;
+  }
+
+  // Account interface
+  bool withdraw(double amount);
+
+  bool deposit(double amount);
+
+  // Transaction interface
+  Transction getTransactionByNum(int i) const;
+
+  // Security
+  bool validateLogin(int acctNum, const string& pass) const;
+
 private:
   string accountHolder;
   int accountNumber;
