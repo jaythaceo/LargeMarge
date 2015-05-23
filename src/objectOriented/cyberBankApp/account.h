@@ -31,7 +31,13 @@ public:
     return balance;
   }
 
-  
+  string getName() const {
+    return accountHolder;
+  }
+
+  int getAccountNum() const {
+    return accountNumber;
+  }
 
 private:
   string accountHolder;
