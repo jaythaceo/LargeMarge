@@ -17,7 +17,12 @@ bool Account::withdraw(double amt) {
         exit(-1);
       }
     }
+    // Add withdrawal to transaction log
+    allTransactions[numOfTrans-1].setTransID(numOfTrans);
+    allTransactions[numOfTrans-1].setTransType(0);
+    allTransactions[numOfTrans-1].setTransAmt(amt);
 
-
+    return true;
   }
 }
+
